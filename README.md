@@ -54,15 +54,15 @@ And the [resolution](https://askubuntu.com/questions/1056314/uploading-code-to-a
 
 #### Simple Circuit
 
-[Simple Circuit](./assets/01/simple.gif)
+![Simple Circuit](./assets/01/simple.gif)
 
 #### Series Circuit
 
-[Series Circuit](./assets/01/series.gif)
+![Series Circuit](./assets/01/series.gif)
 
 #### Parallel Circuit
 
-[Parallel Circuit](./assets/01/parallel.gif)
+![Parallel Circuit](./assets/01/parallel.gif)
 
 ### 02 Spaceship Interface
 
