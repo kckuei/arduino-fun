@@ -38,14 +38,14 @@ And the [resolution](https://askubuntu.com/questions/1056314/uploading-code-to-a
 An electricity/circuits refresher, and how breadboards work primer.
 
 #### Concepts
-* transducers = other forms of energy to electrical energy or vice versa
-* sensors = other forms of energy to electrical energy
-* actuators = electrical energy to other forms
-* circuits = closed loop systems that convey electricity from a power source (e.g. battery) to something that does something useful (load)
+* transducers = convert other forms of energy to electrical energy or vice versa
+* sensors = convert other forms of energy to electrical energy
+* actuators = convert electrical energy to other forms
+* circuits = are closed loop systems that convey electricity from a power source (e.g. battery) to something that does something useful (load)
 * power flows from high to low potential
 * ground generally point of least potential energy
 * in DC circuits, flow is unidirectional
-* in AC circuits, flow changes direction every 50-60Hz.
+* in AC circuits, flow changes direction every 50 or 60 Hz
 * current = amount of charge flowing past a point in circuit (amps)
 * voltage = difference in energy between a point in a circuit and another (V)
 * resistance = how much a component resists flow of current (ohms)
