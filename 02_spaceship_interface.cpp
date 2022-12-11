@@ -1,4 +1,4 @@
-// Aruino Uno microcontroller program to make a snazzy spaceship interface.
+// Arduino Uno microcontroller program to make a snazzy spaceship interface.
 
 
 // Declares variables in mem.
