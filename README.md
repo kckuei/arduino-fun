@@ -52,13 +52,13 @@ Electricity and circuits refresher, and how breadboards work.
 * V (voltage) = I (current) * R (resistance)
 * breadboard = protoyping board for building circuits that doesn't require soldering. consists of multiple horizontal/vertical rows of conductive metal strips.
 * reading resistor bands
-  * either 4 or 5-band
-  * band colors are color-coded to digits
+  * are either 4 or 5-band
+  * the band colors are color-coded to digits
   * for 4-band resistors
-   * 1st band = 1st digit
-   * 2nd band = 2nd digit
-   * 3rd band = number of trailing zeros/multiplier
-   * 4th band = tolerance
+    * 1st band = 1st digit
+    * 2nd band = 2nd digit
+    * 3rd band = number of trailing zeros/multiplier
+    * 4th band = tolerance
 
 #### Building a Simple, Series, and Parallel Circuit
 
@@ -83,17 +83,16 @@ Electricity and circuits refresher, and how breadboards work.
 ### 02 Spaceship Interface
 Digital input and output to make a snazzy spaceship interface like out of a 1970s sci-fi movie. 
 
-[Picard Engage](https://imgflip.com/i/537opy)
+![Picard Engage](https://imgflip.com/i/537opy)
 
 #### Concepts
-* The digital pins on the Arduino board can be used to recieve a signal or trigger a response (i.e., set a state).
-* The response is binary, i.e. it is either on/off (or low/high in terms of voltage).
-* `digitalRead()` is used to read a state (e.g., recieve a signal like a button push).
-* `digitalWrite()` is used to to set the state of a digital pin (e.g., light up a button).
 * Skech = an Arduino computer program. Every sketch has two main functions: a `setup()` and `loop()` function. 
-* The `setup()` function is run once at the start of the program, and the `loop()` function is run as a while loop.
-* `pinMode()` is used to configure/initialize the digital pins as either inputs or outputs during `setup()`.
-* Use `delay()` to trigger a time delay.
+* The `setup()` function is run once at the start of the program, and the `loop()` function is run repeatedly like a while loop.
+* The digital pins on the Arduino board can be used to listen for or recieve a signal (i.e. what is the state?) or trigger a response (i.e. set the state). The response is binary, i.e. it is either on/off (or low/high in terms of voltage).
+* Use `pinMode()` to configure the digital pins as either inputs or outputs in `setup()`.
+* Use `digitalRead()` to read a state (e.g., listen for a signal like a button push).
+* Use `digitalWrite()` to set the state of a digital pin (e.g., light up a button).
+* Use `delay()` to halt execution of the code for a set duration.
 
 #### Beep-Boop
 
