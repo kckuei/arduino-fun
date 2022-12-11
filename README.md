@@ -1,4 +1,5 @@
-# About
+# Arduino Experiments
+## About
 * Some notes from my first foray working with and programming microcontroller devices 
 * Explores the Arudino (Uno) Starter Kit and provided tutorials, and other amateur shenanigans
 
