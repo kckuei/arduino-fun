@@ -119,4 +119,21 @@ Registers how hot you are.
 * Arudino has a build-in analog-to-digital convert (ADC)
 * Analog pins 0-5 report a value between 0-1023, which maps to a range from 0 to 5 volts
 
-#### 
+#### These Hands were Made for Loving
+
+<table>
+  <theader>
+    <tr>
+      <th>Temperature Meter</th>
+    </tr>
+  </theader>
+  <tbody>
+    <tr>
+      <td><img src="./assets/03/thermistor.gif" width="200" /></td>
+    </tr>
+  </tbody>
+</table>
+
+
+### 04 Color Mixing Lamp
+

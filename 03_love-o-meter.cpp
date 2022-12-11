@@ -1,10 +1,11 @@
 // Initialize constants.
+const int baudRate = 9600;        // Sets the baud rate for the serial port.
 const int sensorPin = A0;         // Sets the temperature sensor pin.
 const float baselineTemp = 20.0;  // Sets the baseline temperature for branching.
 
 void setup() {
-  // Open a serial port
-  Serial.begin (9600);
+  // Open a serial port with the computer.
+  Serial.begin (baudRate);
 
   // Initialize the digital pin directions and turn off. 
   for (int pinNumber = 2; pinNumber < 5; pinNumber++) {
@@ -31,7 +32,7 @@ void loop() {
   Serial.print(sensorVal);
 
   Serial.print(", degrees C: ");
-  Serial.print(temperature);
+  Serial.println(temperature);
 
   // Turn off LED's for a low temperature.
   if (temperature < baselineTemp + 2) {
