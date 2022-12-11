@@ -51,7 +51,14 @@ Electricity and circuits refresher, and how breadboards work.
 * resistance = how much a component resists flow of current (ohms)
 * V (voltage) = I (current) * R (resistance)
 * breadboard = protoyping board for building circuits that doesn't require soldering. consists of multiple horizontal/vertical rows of conductive metal strips.
-* reading resistor bands: either 4 or 5-band, is color-coded to digits, shows digits followed by number of trailing zeros/multiplier, and lastly tolerance value.
+* reading resistor bands
+  * either 4 or 5-band
+  * band colors are color-coded to digits
+  * for 4-band resistors
+   * 1st band = 1st digit
+   * 2nd band = 2nd digit
+   * 3rd band = number of trailing zeros/multiplier
+   * 4th band = tolerance
 
 #### Building a Simple, Series, and Parallel Circuit
 
@@ -76,7 +83,7 @@ Electricity and circuits refresher, and how breadboards work.
 ### 02 Spaceship Interface
 Digital input and output to make a snazzy spaceship interface like out of a 1970s sci-fi movie. 
 
-**Placeholder for Star Trek Piccard "Engage"**
+[Picard Engage](https://imgflip.com/i/537opy)
 
 #### Concepts
 * The digital pins on the Arduino board can be used to recieve a signal or trigger a response (i.e., set a state).
@@ -88,44 +95,6 @@ Digital input and output to make a snazzy spaceship interface like out of a 1970
 * `pinMode()` is used to configure/initialize the digital pins as either inputs or outputs during `setup()`.
 * Use `delay()` to trigger a time delay.
 
-#### Microcontroller Program
+#### Beep-Boop
 
-```C++
-// Declares variables in mem.
-int switchState = 0;
-
-void setup() {
-  // Initializes digital pins as either inputs or outputs.
-  pinMode(2, INPUT);
-  pinMode(3, OUTPUT);
-  pinMode(4, OUTPUT);
-  pinMode(5, OUTPUT);
-}
-
-void loop() {
-  // Gets the switch state.
-  switchState = digitalRead(2);
-  
-  // If the button is not pressed.
-  if (switchState == LOW) {
-    digitalWrite(3, HIGH);	// green LED
-    digitalWrite(4, LOW); 	// red LED
-    digitalWRite(5, LOW);	// red LED
-  }
-  // Otherwise the button is pressed.
-  else {
-    digitalWrite(3, LOW);
-    digitalWrite(4, LOW);
-    digitalWRite(5, HIGH);
-    delay(250);
-    
-    digitalWrite(4, HIGH);
-    digitalWrite(5, LOW);
-    delay(250);
-  }
-}
-
-```
-
-
-
+<img src="./assets/02/beeboop.gif" width="200" />
