@@ -1,3 +1,6 @@
+// Aruino Uno microcontroller program to make a snazzy spaceship interface.
+
+
 // Declares variables in mem.
 int switchState = 0;
 

@@ -96,4 +96,22 @@ Digital input and output to make a snazzy spaceship interface like out of a 1970
 
 #### Beep-Boop
 
-<img src="./assets/02/beeboop.gif" width="200" />
+<table>
+  <theader>
+    <tr>
+      <th>Press Button</th>
+      <th>Toggle Button</th>
+    </tr>
+  </theader>
+  <tbody>
+    <tr>
+      <td><img src="./assets/02/beeboop.gif" width="200" /></td>
+      <td><img src="./assets/02/beeboop2.gif" width="200" /></td>
+    </tr>
+  </tbody>
+</table>
+
+
+### 03 Love-O-Meter
+
+
