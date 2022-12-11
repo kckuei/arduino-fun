@@ -32,10 +32,10 @@ And the [resolution](https://askubuntu.com/questions/1056314/uploading-code-to-a
 
 ```
 
-## Notes
+## Projects
 
 ### 01 Get to Know Your Tools
-Electricity and circuits refresher, and how breadboards work.
+An electricity/circuits refresher, and how breadboards work primer.
 
 #### Concepts
 * transducers = other forms of energy to electrical energy or vice versa
@@ -50,7 +50,7 @@ Electricity and circuits refresher, and how breadboards work.
 * voltage = difference in energy between a point in a circuit and another (V)
 * resistance = how much a component resists flow of current (ohms)
 * V (voltage) = I (current) * R (resistance)
-* breadboard = protoyping board for building circuits that doesn't require soldering. consists of multiple horizontal/vertical rows of conductive metal strips.
+* Breadboard = protoyping board for building circuits that doesn't require soldering. Consists of multiple horizontal/vertical rows of conductive metal strips with wells that you can easily plug into.
 * reading resistor bands
   * are either 4 or 5-band
   * the band colors are color-coded to digits
@@ -81,7 +81,7 @@ Electricity and circuits refresher, and how breadboards work.
 
 
 ### 02 Spaceship Interface
-Digital input and output to make a snazzy spaceship interface like out of a 1970s sci-fi movie. 
+A digital I/O to mimic those snazzy 1970s sci-fispaceship interfaces.
 
 <img src="./assets/02/picard.jpg" alt="Picard Engage" width="300" />
 
