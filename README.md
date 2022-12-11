@@ -83,7 +83,7 @@ Electricity and circuits refresher, and how breadboards work.
 ### 02 Spaceship Interface
 Digital input and output to make a snazzy spaceship interface like out of a 1970s sci-fi movie. 
 
-![Picard Engage](https://imgflip.com/i/537opy)
+![Picard Engage](./assets/02/picard.jpg)
 
 #### Concepts
 * Skech = an Arduino computer program. Every sketch has two main functions: a `setup()` and `loop()` function. 
