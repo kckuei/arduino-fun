@@ -52,17 +52,24 @@ And the [resolution](https://askubuntu.com/questions/1056314/uploading-code-to-a
 * breadboard = protoyping board for building circuits that doesn't require soldering. consists of multiple horizontal/vertical rows of conductive metal strips.
 * reading resistor bands: either 4 or 5-band, color-coded to digits and number of trailing zeros/multiplier, and tolerance value.
 
-#### Simple Circuit
+#### Simple, Series, and Parallel Circuit
 
-<img src="./assets/01/simple.gif" width="200" />
-
-#### Series Circuit
-
-<img src="./assets/01/series.gif" width="200" />
-
-#### Parallel Circuit
-
-<img src="./assets/01/parallel.gif" width="200" />
+<table>
+  <theader>
+    <tr>
+      <th>Simple Circuit</th>
+      <th>Series Circuit</th>
+      <th>Parallel Circuit</th>
+    </tr>
+  </theader>
+  <tbody>
+    <tr>
+      <td><img src="./assets/01/simple.gif" width="200" /></td>
+      <td><img src="./assets/01/series.gif" width="200" /></td>
+      <td><img src="./assets/01/parallel.gif" width="200" /></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 02 Spaceship Interface
 
