@@ -1,7 +1,7 @@
-# Arduino Experiments
+# Arduino Projects
 ## About
-* Some notes from my first foray working with and programming microcontroller devices 
-* Explores the Arudino (Uno) Starter Kit and provided tutorials, and other amateur shenanigans
+* Some notes working with and programming microcontroller devices using the Arduino Uno Starter Kit
+* Documents the provided project tutorials and other amateur shenanigans
 
 ## Setup
 In addition to the project manual, these docs were helpful with getting started:
@@ -113,5 +113,10 @@ A digital I/O to mimic those snazzy 1970s sci-fi spaceship interfaces.
 
 
 ### 03 Love-O-Meter
+Registers how hot you are.
 
+#### Concepts
+* Arudino has a build-in analog-to-digital convert (ADC)
+* Analog pins 0-5 report a value between 0-1023, which maps to a range from 0 to 5 volts
 
+#### 
