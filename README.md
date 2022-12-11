@@ -1,18 +1,18 @@
 # About
-* Some notes from my first foray with working with, and programming microcontroller devices 
-* Explores the Arudino (Uno) Starter Kit, provided tutorials, and more
+* Some notes from my first foray working with and programming microcontroller devices 
+* Explores the Arudino (Uno) Starter Kit and provided tutorials, and other amateur shenanigans
 
 ## Setup
-In addition to the manual, these docs were helpful:
+In addition to the project manual, these docs were helpful with getting started:
 * [Getting Started with Arduiono IDE 2.0](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started-ide-v2)
 
 ### Arduino IDE 2.0 Installation
-* Used the AppImage installation option for Linux
-* Must enable permissions to run: `Properties > Permissions > Execute: > Click Allow executing file as program`
+* I used the appImage installation option for `linux`
+* Don't forget to enable permissions to run: `Properties > Permissions > Execute: > Click Allow executing file as program`
 
 
 ### Error on Blink Demo
-One issue when trying to upload programs:
+One issue I encountered with uploading programs using the IDE:
 
 ```
 Sketch uses 924 bytes (2%) of program storage space. Maximum is 32256 bytes.
@@ -34,6 +34,7 @@ And the [resolution](https://askubuntu.com/questions/1056314/uploading-code-to-a
 ## Notes
 
 ### 01 Get to Know Your Tools
+Electricity and circuits refresher, and how breadboards work.
 
 #### Concepts
 * transducers = other forms of energy to electrical energy or vice versa
@@ -49,7 +50,7 @@ And the [resolution](https://askubuntu.com/questions/1056314/uploading-code-to-a
 * resistance = how much a component resists flow of current (ohms)
 * V (voltage) = I (current) * R (resistance)
 * breadboard = protoyping board for building circuits that doesn't require soldering. consists of multiple horizontal/vertical rows of conductive metal strips.
-* reading resistor bands: either 4 or 5-band, color-coded to digits and number of trailing zeros/multiplier, and tolerance value.
+* reading resistor bands: either 4 or 5-band, is color-coded to digits, shows digits followed by number of trailing zeros/multiplier, and lastly tolerance value.
 
 #### Building a Simple, Series, and Parallel Circuit
 
@@ -70,5 +71,60 @@ And the [resolution](https://askubuntu.com/questions/1056314/uploading-code-to-a
   </tbody>
 </table>
 
+
 ### 02 Spaceship Interface
+Digital input and output to make a snazzy spaceship interface like out of a 1970s sci-fi movie. 
+
+**Placeholder for Star Trek Piccard "Engage"**
+
+#### Concepts
+* The digital pins on the Arduino board can be used to recieve a signal or trigger a response (i.e., set a state).
+* The response is binary, i.e. it is either on/off (or low/high in terms of voltage).
+* `digitalRead()` is used to read a state (e.g., recieve a signal like a button push).
+* `digitalWrite()` is used to to set the state of a digital pin (e.g., light up a button).
+* Skech = an Arduino computer program. Every sketch has two main functions: a `setup()` and `loop()` function. 
+* The `setup()` function is run once at the start of the program, and the `loop()` function is run as a while loop.
+* `pinMode()` is used to configure/initialize the digital pins as either inputs or outputs during `setup()`.
+* Use `delay()` to trigger a time delay.
+
+#### Program Execution
+
+```C++
+// Declares variables in mem.
+int switchState = 0;
+
+void setup() {
+  // Initializes digital pins as either inputs or outputs.
+  pinMode(2, INPUT);
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
+}
+
+void loop() {
+  // Gets the switch state.
+  switchState = digitalRead(2)
+  
+  // If the button is not pressed.
+  if (switchState == LOW) {
+    digitalWrite(3, HIGH)	// green LED
+    digitalWrite(4, LOW) 	// red LED
+    digitalWRite(5, LOW)	// red LED
+  }
+  // Otherwise the button is pressed.
+  else {
+    digitalWrite(3, LOW);
+    digitalWrite(4, LOW);
+    digitalWRite(5, HIGH);
+    delay(250);
+    
+    digitalWrite(4, HIGH);
+    digitalWrite(5, LOW);
+    delay(250);
+  }
+}
+
+```
+
+
 
