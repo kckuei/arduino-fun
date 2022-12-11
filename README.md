@@ -88,7 +88,7 @@ Digital input and output to make a snazzy spaceship interface like out of a 1970
 * `pinMode()` is used to configure/initialize the digital pins as either inputs or outputs during `setup()`.
 * Use `delay()` to trigger a time delay.
 
-#### Program Execution
+#### Microcontroller Program
 
 ```C++
 // Declares variables in mem.
@@ -104,13 +104,13 @@ void setup() {
 
 void loop() {
   // Gets the switch state.
-  switchState = digitalRead(2)
+  switchState = digitalRead(2);
   
   // If the button is not pressed.
   if (switchState == LOW) {
-    digitalWrite(3, HIGH)	// green LED
-    digitalWrite(4, LOW) 	// red LED
-    digitalWRite(5, LOW)	// red LED
+    digitalWrite(3, HIGH);	// green LED
+    digitalWrite(4, LOW); 	// red LED
+    digitalWRite(5, LOW);	// red LED
   }
   // Otherwise the button is pressed.
   else {
