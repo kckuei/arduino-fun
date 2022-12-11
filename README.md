@@ -81,7 +81,7 @@ An electricity/circuits refresher, and how breadboards work primer.
 
 
 ### 02 Spaceship Interface
-A digital I/O to mimic those snazzy 1970s sci-fispaceship interfaces.
+A digital I/O to mimic those snazzy 1970s sci-fi spaceship interfaces.
 
 <img src="./assets/02/picard.jpg" alt="Picard Engage" width="300" />
 
