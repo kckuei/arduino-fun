@@ -1,7 +1,6 @@
 # About
-* My first foray with working on microcontroller devices and  programming for building digital devices
-* Documents my experience with using the Arudino (Uno) Starter Kit and working through tutorials, and random personal projects
-
+* Some notes from my first foray with working with, and programming microcontroller devices 
+* Explores the Arudino (Uno) Starter Kit, provided tutorials, and more
 
 ## Setup
 In addition to the manual, these docs were helpful:
@@ -52,7 +51,7 @@ And the [resolution](https://askubuntu.com/questions/1056314/uploading-code-to-a
 * breadboard = protoyping board for building circuits that doesn't require soldering. consists of multiple horizontal/vertical rows of conductive metal strips.
 * reading resistor bands: either 4 or 5-band, color-coded to digits and number of trailing zeros/multiplier, and tolerance value.
 
-#### Simple, Series, and Parallel Circuit
+#### Building a Simple, Series, and Parallel Circuit
 
 <table>
   <theader>
