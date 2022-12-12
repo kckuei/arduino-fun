@@ -1,7 +1,5 @@
 # Arduino Projects
-## About
-* Some notes working with and programming microcontroller devices using the Arduino Uno Starter Kit
-* Documents the provided project tutorials and other amateur shenanigans
+Documents my first foray and some working notes into microcontroller programming using the Arudino Uno Starter Kit.
 
 ## Setup
 In addition to the project manual, these docs were helpful with getting started:
@@ -23,19 +21,16 @@ Failed uploading: uploading error: exit status 1
 ```
 
 And the [resolution](https://askubuntu.com/questions/1056314/uploading-code-to-arduino-gives-me-the-error-avrdude-ser-open-cant-open-d
-):
+) (should be applied in root):
 
 ```
-(base) kckuei@kckuei-Precision-3560:~$ ls /dev/ttyACM0
-/dev/ttyACM0
-(base) kckuei@kckuei-Precision-3560:~$ sudo chmod a+rw /dev/ttyACM0
-
+sudo chmod a+rw /dev/ttyACM0
 ```
 
 ## Projects
 
 ### 01 Get to Know Your Tools
-An electricity/circuits refresher, and how breadboards work primer.
+An electricity/circuits refresher, and primer of how breadboards work.
 
 #### Concepts
 * transducers = convert other forms of energy to electrical energy or vice versa
@@ -150,14 +145,15 @@ Create a lamp that smoothly changes colors based on external lighting conditions
   * Duty cycle = the percentage of time that a pin is `HIGH` in a period.
   * A pin that is `HIGH` half of the time, and `LOW` the remaining time has a duty cycler of 50%.
   * The lower the duty cycle, the dimmer the LED.
+* Programatically, the duty cycle is set by passing a second argument to `digitalWrite()`.
 * To measure the relative amount of red, green, or blue, we can apply filters to the individual phototransistors. E.g.m, red filter passes only red light, green filter only passes green light, etc.
 
 
 <table>
   <theader>
     <tr>
-      <th>Mood 1</th>
-      <th>Mood 2</th>
+      <th>Kinda Moody</th>
+      <th>Red to Blue</th>
     </tr>
   </theader>
   <tbody>
