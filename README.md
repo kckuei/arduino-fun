@@ -170,7 +170,23 @@ Create a lamp that smoothly changes colors based on external lighting conditions
 
 [Microcontroller Program.](https://github.com/kckuei/arduino-fun/blob/main/programs/04_color_mixing_lamp.cpp)
 
+### Variant: Nightlight
+* Try making a board configuration, and program for a nightlight.
+* When the light dims, the light comes on.
 
 
 ## 05. Mood Cue
 Uses a servo motor to make a mechanical guage to point to the mood for the day.
+
+### Concepts
+* Servo motors = motors that move to a specific position, typically a 0-180 degree range of motion.
+* Similar to PWM in LED's, servos expect a number of pulses to tell them what angle to move to. 
+  * Pulses vary between 1000 and 2000 microseconds
+  * Arudiono comes with a `Servo.h` library for controlling the motor
+* Use `map` to map/change the scale of the analog input from 0-1023 to 0-180 degrees. 
+* *Decoupling capacitors* are used to reduce, decouple changes caused by components from the rest of the circuit (e.g. voltage drops from drawing more current due to already being in motion)
+* Capacitors are directional, and also have a cathode/anode side. 
+* `CAUTION:` **Putting capacitors in backwards can make them explode**.
+
+### Variant: Decision-Maker
+* Push a button and have it pick a choice for you (yes, no, maybe)
