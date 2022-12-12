@@ -1,16 +1,16 @@
 # Arduino Projects
 Documents my first foray and some working notes into microcontroller programming using the Arudino Uno Starter Kit.
 
-## Setup
+# Setup
 In addition to the project manual, these docs were helpful with getting started:
 * [Getting Started with Arduiono IDE 2.0](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started-ide-v2)
 
-### Arduino IDE 2.0 Installation
+## Arduino IDE 2.0 Installation
 * I used the appImage installation option for `linux`
 * Don't forget to enable permissions to run: `Properties > Permissions > Execute: > Click Allow executing file as program`
 
 
-### Error on Blink Demo
+## Error on Blink Demo
 One issue I encountered with uploading programs using the IDE:
 
 ```
@@ -27,12 +27,12 @@ And the [resolution](https://askubuntu.com/questions/1056314/uploading-code-to-a
 sudo chmod a+rw /dev/ttyACM0
 ```
 
-## Projects
+# Projects
 
-### Project 01: Get to Know Your Tools
+## Project 01: Get to Know Your Tools
 An electricity/circuits refresher, and primer of how breadboards work.
 
-#### Concepts
+### Concepts
 * transducers = convert other forms of energy to electrical energy or vice versa
 * sensors = convert other forms of energy to electrical energy
 * actuators = convert electrical energy to other forms
@@ -55,7 +55,7 @@ An electricity/circuits refresher, and primer of how breadboards work.
     * 3rd band = number of trailing zeros/multiplier
     * 4th band = tolerance
 
-#### Building a Simple, Series, and Parallel Circuit
+### Building a Simple, Series, and Parallel Circuit
 
 <table>
   <theader>
@@ -75,12 +75,12 @@ An electricity/circuits refresher, and primer of how breadboards work.
 </table>
 
 
-### Project 02: Spaceship Interface
+## Project 02: Spaceship Interface
 A digital I/O to mimic those snazzy 1970s sci-fi spaceship interfaces.
 
 <img src="./assets/02/picard.jpg" alt="Picard Engage" width="300" />
 
-#### Concepts
+### Concepts
 * Skech = an Arduino computer program. Every sketch has two main functions: a `setup()` and `loop()` function. 
 * The `setup()` function is run once at the start of the program, and the `loop()` function is run repeatedly like a while loop.
 * The digital pins on the Arduino board can be used to listen for or recieve a signal (i.e. what is the state?) or trigger a response (i.e. set the state). The response is binary, i.e. it is either on/off (or low/high in terms of voltage).
@@ -89,7 +89,7 @@ A digital I/O to mimic those snazzy 1970s sci-fi spaceship interfaces.
 * Use `digitalWrite()` to set the state of a digital pin (e.g., light up a button).
 * Use `delay()` to halt execution of the code for a set duration.
 
-#### Beep-Boop
+### Beep-Boop
 
 <table>
   <theader>
@@ -106,17 +106,19 @@ A digital I/O to mimic those snazzy 1970s sci-fi spaceship interfaces.
   </tbody>
 </table>
 
+[Microcontroller Program.](https://github.com/kckuei/arduino-fun/blob/main/programs/02_spaceship_interface.cpp)
 
-### Project 03: Love-O-Meter
+
+## Project 03: Love-O-Meter
 Registers how hot you are.
 
-#### Concepts
+### Concepts
 * Arudino has a build-in analog-to-digital convert (ADC).
 * Analog pins 0-5 report a value between 0-1023, which maps to a range from 0 to 5 volts.
 * Use the `Serial.begin()` command in `setup()` to open up a serial port to communicate with the cpu.
 * Then you can use `Serial.print` or `Serial.println` to log values.
 
-#### These Hands were Made for Hold'n
+### These Hands were Made for Hold'n
 
 <table>
   <theader>
@@ -131,11 +133,13 @@ Registers how hot you are.
   </tbody>
 </table>
 
+[Microcontroller Program.](https://github.com/kckuei/arduino-fun/blob/main/programs/03_love-o-meter.cpp)
 
-### Project 04: Color Mixing Lamp
+
+## Project 04: Color Mixing Lamp
 Create a lamp that smoothly changes colors based on external lighting conditions using a tri-color LED and three phototransistors. 
 
-#### Concepts
+### Concepts
 * phototransistors = components that generate a current proportional to quantity of light absorbed. 
 * LED = light-emitting diode, emits light when current/voltage is applied.
 * A fading LED effect can be achieved by either directly manipulating the applied voltage, or using pulse width modulation (PWM). 
@@ -164,6 +168,9 @@ Create a lamp that smoothly changes colors based on external lighting conditions
   </tbody>
 </table>
 
+[Microcontroller Program.](https://github.com/kckuei/arduino-fun/blob/main/programs/04_color_mixing_lamp.cpp)
 
-### Project 05: Mood Cue
+
+
+## Project 05: Mood Cue
 Uses a servo motor to make a mechanical guage to point to the mood for the day.
