@@ -29,7 +29,7 @@ sudo chmod a+rw /dev/ttyACM0
 
 ## Projects
 
-### 01 Get to Know Your Tools
+### Project 01: Get to Know Your Tools
 An electricity/circuits refresher, and primer of how breadboards work.
 
 #### Concepts
@@ -75,7 +75,7 @@ An electricity/circuits refresher, and primer of how breadboards work.
 </table>
 
 
-### 02 Spaceship Interface
+### Project 02: Spaceship Interface
 A digital I/O to mimic those snazzy 1970s sci-fi spaceship interfaces.
 
 <img src="./assets/02/picard.jpg" alt="Picard Engage" width="300" />
@@ -107,7 +107,7 @@ A digital I/O to mimic those snazzy 1970s sci-fi spaceship interfaces.
 </table>
 
 
-### 03 Love-O-Meter
+### Project 03: Love-O-Meter
 Registers how hot you are.
 
 #### Concepts
@@ -132,7 +132,7 @@ Registers how hot you are.
 </table>
 
 
-### 04 Color Mixing Lamp
+### Project 04: Color Mixing Lamp
 Create a lamp that smoothly changes colors based on external lighting conditions using a tri-color LED and three phototransistors. 
 
 #### Concepts
@@ -163,3 +163,7 @@ Create a lamp that smoothly changes colors based on external lighting conditions
     </tr>
   </tbody>
 </table>
+
+
+### Project 05: Mood Cue
+Uses a servo motor to make a mechanical guage to point to the mood for the day.
