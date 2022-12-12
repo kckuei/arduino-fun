@@ -116,10 +116,12 @@ A digital I/O to mimic those snazzy 1970s sci-fi spaceship interfaces.
 Registers how hot you are.
 
 #### Concepts
-* Arudino has a build-in analog-to-digital convert (ADC)
-* Analog pins 0-5 report a value between 0-1023, which maps to a range from 0 to 5 volts
+* Arudino has a build-in analog-to-digital convert (ADC).
+* Analog pins 0-5 report a value between 0-1023, which maps to a range from 0 to 5 volts.
+* Use the `Serial.begin()` command in `setup()` to open up a serial port to communicate with the cpu.
+* Then you can use `Serial.print` or `Serial.println` to log values.
 
-#### These Hands were Made for Loving
+#### These Hands were Made for Hold'n
 
 <table>
   <theader>
@@ -136,4 +138,18 @@ Registers how hot you are.
 
 
 ### 04 Color Mixing Lamp
+Create a lamp that smoothly changes colors based on external lighting conditions using a tri-color LED and three phototransistors. 
+
+#### Concepts
+* phototransistors = components that generate a current proportional to quantity of light absorbed. 
+* LED = light-emitting diode, emits light when current/voltage is applied.
+* A fading LED effect can be achieved by either directly manipulating the applied voltage, or using pulse width modulation (PWM). 
+* The output of the Arudiono is non-variable constant 5V voltage, therefore need PWM to achieve this affect.
+* How it works: 
+  * PWM rapidly turns the output to `HIGH` and `low` over a fixed period of time. Rapidly turning the pin `HIGH` and `LOW` emulates a changing voltage, perceptually akin to frames in a movie.
+  * Duty cycle = the percentage of time that a pin is `HIGH` in a period.
+  * A pin that is `HIGH` half of the time, and `LOW` the remaining time has a duty cycler of 50%.
+  * The lower the duty cycle, the dimmer the LED.
+* To measure the relative amount of red, green, or blue, we can apply filters to the individual phototransistors. E.g.m, red filter passes only red light, green filter only passes green light, etc.
+
 
