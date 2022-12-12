@@ -153,3 +153,17 @@ Create a lamp that smoothly changes colors based on external lighting conditions
 * To measure the relative amount of red, green, or blue, we can apply filters to the individual phototransistors. E.g.m, red filter passes only red light, green filter only passes green light, etc.
 
 
+<table>
+  <theader>
+    <tr>
+      <th>Mood 1</th>
+      <th>Mood 2</th>
+    </tr>
+  </theader>
+  <tbody>
+    <tr>
+      <td><img src="./assets/04/mood1.gif" width="200" /></td>
+      <td><img src="./assets/04/mood2.gif" width="200" /></td>
+    </tr>
+  </tbody>
+</table>
