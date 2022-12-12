@@ -29,7 +29,7 @@ sudo chmod a+rw /dev/ttyACM0
 
 # Projects
 
-## Project 01: Get to Know Your Tools
+## 01. Get to Know Your Tools
 An electricity/circuits refresher, and primer of how breadboards work.
 
 ### Concepts
@@ -75,7 +75,7 @@ An electricity/circuits refresher, and primer of how breadboards work.
 </table>
 
 
-## Project 02: Spaceship Interface
+## 02. Spaceship Interface
 A digital I/O to mimic those snazzy 1970s sci-fi spaceship interfaces.
 
 <img src="./assets/02/picard.jpg" alt="Picard Engage" width="300" />
@@ -109,7 +109,7 @@ A digital I/O to mimic those snazzy 1970s sci-fi spaceship interfaces.
 [Microcontroller Program.](https://github.com/kckuei/arduino-fun/blob/main/programs/02_spaceship_interface.cpp)
 
 
-## Project 03: Love-O-Meter
+## 03. Love-O-Meter
 Registers how hot you are.
 
 ### Concepts
@@ -136,7 +136,7 @@ Registers how hot you are.
 [Microcontroller Program.](https://github.com/kckuei/arduino-fun/blob/main/programs/03_love-o-meter.cpp)
 
 
-## Project 04: Color Mixing Lamp
+## 04. Color Mixing Lamp
 Create a lamp that smoothly changes colors based on external lighting conditions using a tri-color LED and three phototransistors. 
 
 ### Concepts
@@ -172,5 +172,5 @@ Create a lamp that smoothly changes colors based on external lighting conditions
 
 
 
-## Project 05: Mood Cue
+## 05. Mood Cue
 Uses a servo motor to make a mechanical guage to point to the mood for the day.
