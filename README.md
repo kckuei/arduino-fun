@@ -192,6 +192,8 @@ It brightens as the external lighting fades:
   </tbody>
 </table>
 
+[Microcontroller Program.](https://github.com/kckuei/arduino-fun/blob/main/programs/04b_night_light.cpp)
+
 
 ## 05. Mood Cue
 Uses a servo motor to make a mechanical guage to point to the mood for the day.
@@ -206,5 +208,18 @@ Uses a servo motor to make a mechanical guage to point to the mood for the day.
 * Capacitors are directional, and also have a cathode/anode side. 
 * `CAUTION:` **Putting capacitors in backwards can make them explode**.
 
+
+[Microcontroller Program.](https://github.com/kckuei/arduino-fun/blob/main/programs/05_mood_cue.cpp)
+
+
 ### Variant: Decision-Maker
 * Push a button and have it pick a choice for you (yes, no, maybe)
+
+
+
+
+
+
+
+
+
