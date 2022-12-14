@@ -174,6 +174,8 @@ Create a lamp that smoothly changes colors based on external lighting conditions
 * Try making a board configuration, and program for a nightlight.
 * When the light dims, the light comes on.
 
+* It is sensitive to the orientation of the photoresistor. For best results, should orient photo resistors in different orientations and take the average of the response.
+
 
 ## 05. Mood Cue
 Uses a servo motor to make a mechanical guage to point to the mood for the day.
