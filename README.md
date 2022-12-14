@@ -170,12 +170,12 @@ Create a lamp that smoothly changes colors based on external lighting conditions
 
 [Microcontroller Program.](https://github.com/kckuei/arduino-fun/blob/main/programs/04_color_mixing_lamp.cpp)
 
-### Variant: Nightlight
-* A nightlight that brightens as lighting fades. 
-* Uses the same LED and one phototransistor.
-* Somewhat sensitive to the orientation of the photoresistor.
-* For best results, it's probably best to use a 2-3 photoresistors at different orientations, and then take the average of their sensor values.
-* In addition, the photoresistors should be isolated/obscured from the LED as the LED itself emits some light.
+### Variant: A Nightlight to Keep Scary Monsters Away
+It brightens as the external lighting fades:
+* Uses the same tri-color LED and one phototransistor.
+* Interestingly, the response and calibration/fudge factor is sesnsitive to the orientation of the phototransistor with respect to the light source.
+* For best results, it's probably best to use a 2-3 phototransistors oriented at different angles, and then take the average of their sensor values for a less biased result.
+* The LED also emits some amount of light which the phototransistor may be picking up, so it may be preferred to isolate/obscure the line of site of the phototransistor and LED.
 
 <table>
   <theader>
@@ -186,8 +186,8 @@ Create a lamp that smoothly changes colors based on external lighting conditions
   </theader>
   <tbody>
     <tr>
-      <td><img src="./assets/04b/nightlight1.gif" width="200" /></td>
-      <td><img src="./assets/04b/nightlight2.gif" width="200" /></td>
+      <td><img src="./assets/04b/04b_nightlight1.gif" width="200" /></td>
+      <td><img src="./assets/04b/04b_nightlight2.gif" width="200" /></td>
     </tr>
   </tbody>
 </table>
