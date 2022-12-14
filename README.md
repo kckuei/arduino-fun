@@ -171,10 +171,26 @@ Create a lamp that smoothly changes colors based on external lighting conditions
 [Microcontroller Program.](https://github.com/kckuei/arduino-fun/blob/main/programs/04_color_mixing_lamp.cpp)
 
 ### Variant: Nightlight
-* Try making a board configuration, and program for a nightlight.
-* When the light dims, the light comes on.
+* A nightlight that brightens as lighting fades. 
+* Uses the same LED and one phototransistor.
+* Somewhat sensitive to the orientation of the photoresistor.
+* For best results, it's probably best to use a 2-3 photoresistors at different orientations, and then take the average of their sensor values.
+* In addition, the photoresistors should be isolated/obscured from the LED as the LED itself emits some light.
 
-* It is sensitive to the orientation of the photoresistor. For best results, should orient photo resistors in different orientations and take the average of the response.
+<table>
+  <theader>
+    <tr>
+      <th>On/Off</th>
+      <th>Gradual Fade In/Out</th>
+    </tr>
+  </theader>
+  <tbody>
+    <tr>
+      <td><img src="./assets/04b/nightlight1.gif" width="200" /></td>
+      <td><img src="./assets/04b/nightlight2.gif" width="200" /></td>
+    </tr>
+  </tbody>
+</table>
 
 
 ## 05. Mood Cue
