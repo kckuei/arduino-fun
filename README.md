@@ -21,9 +21,10 @@ Failed uploading: uploading error: exit status 1
 ```
 
 And the [resolution](https://askubuntu.com/questions/1056314/uploading-code-to-arduino-gives-me-the-error-avrdude-ser-open-cant-open-d
-) (should be applied in root):
+):
 
-```
+In root:
+```bash
 sudo chmod a+rw /dev/ttyACM0
 ```
 
@@ -209,17 +210,36 @@ Uses a servo motor to make a mechanical guage to point to the mood for the day.
 * `CAUTION:` **Putting capacitors in backwards can make them explode**.
 
 
+<table>
+  <theader>
+    <tr>
+      <th>Testing Testing</th>
+      <th>:) :| :) :|</th>
+    </tr>
+  </theader>
+  <tbody>
+    <tr>
+      <td><img src="./assets/05/05_mood_cue1.gif" width="200" /></td>
+      <td><img src="./assets/05/05_mood_cue2.gif" width="200" /></td>
+    </tr>
+  </tbody>
+</table>
+
 [Microcontroller Program.](https://github.com/kckuei/arduino-fun/blob/main/programs/05_mood_cue.cpp)
+
+Note: 
+The servo signal and power wires are reversed compared to the manual.
+
+<img src="./assets/05/servo_wire_mismatch.jpg" width="200" />
 
 
 ### Variant: Decision-Maker
-* Push a button and have it pick a choice for you (yes, no, maybe)
+Push a button and have it pick a choice for you (yes, no, maybe)
 
+### Idea: Disco Board
+Tiny discoteque light board to impress the ladies
 
-
-
-
-
+<img src="./assets/disco/discoboard.jpg" width="200" />
 
 
 
