@@ -4,6 +4,7 @@ Documents my first foray and some working notes into microcontroller programming
 # Setup
 In addition to the project manual, these docs were helpful with getting started:
 * [Getting Started with Arduiono IDE 2.0](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started-ide-v2)
+* [Functions Reference](https://www.arduino.cc/reference/en/
 
 ## Arduino IDE 2.0 Installation
 * I used the appImage installation option for `linux`
@@ -228,7 +229,7 @@ Uses a servo motor to make a mechanical guage to point to the mood for the day.
 [Microcontroller Program.](https://github.com/kckuei/arduino-fun/blob/main/programs/05_mood_cue.cpp)
 
 Note: 
-The servo signal and power wires are reversed compared to the manual.
+The servo signal and power wires (white and red wires) are reversed compared to the manual.
 
 <img src="./assets/05/servo_wire_mismatch.jpg" width="200" />
 
@@ -241,5 +242,38 @@ Tiny discoteque light board to impress the ladies
 
 <img src="./assets/disco/discoboard.jpg" width="200" />
 
+
+## 06. Light Theremin
+Uses a phototransistor and a piezo element to make a light-based theremin. 
+
+### Concepts
+* *theremin* is an instrument that makes sounds based on nearby movements, e.g. musician's hands.
+* *piezo* is a small element that vibrates when it recieves electricity; the displacement of air hence creates sound waves.
+* We use the `map()` function to map the light intensity from a phototransistor to a pitch or frequency. That frequency or pitch is then specified in a `tone()` function that manipulates the sound emitted from the piezo: hence the 'light thermin'.
+* `millis()` returns the number of ms elapsed since start of program.  We use it to add a calibration state in the setup by mapping the min/max phototransistor values representative of someone playing the light thermin.
+* `tone()` is a function that can be used to play a sound (given a pin), that takes a pitch and duration.
+
+[Video placeholder]
+
+[Microcontroller Program.](https://github.com/kckuei/arduino-fun/blob/main/programs/06_light_thermin.cpp)
+
+
+## 07. Keyboard Instrument
+Uses a few resistors and buttons to build a musical keyboard.
+
+### Concepts
+* *resistor ladder* is a technique for reading a number of switches using the analog input; consists of arranging several switches in parallel; each button when pressed engages a different number of resistors and hence voltage level, which gets passed/read to the input analog pin. 
+* Each of the switches acts as a voltage divider.
+
+[Video placeholder]
+
+[Microcontroller Program.](https://github.com/kckuei/arduino-fun/blob/main/programs/07_keyboard_instrument.cpp)
+
+
+## 08. Digital Hourglass
+Uses a tilt sensor, array of LED's, some resistors, and Arduino's built-in timer to build a digital hourglass.
+
+### Concepts
+* 
 
 
